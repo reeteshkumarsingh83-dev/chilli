@@ -1,0 +1,89 @@
+:root {
+  --brand-color: #E5354B;
+  --brand-hover: #E5354B;
+}
+
+.bg-brand {
+  background-color: var(--brand-color) !important;
+}
+.bg-primary{
+background-color: var(--brand-color) !important;
+}
+
+.text-brand {
+  color: var(--brand-color) !important;
+}
+
+.nav-link.active.bg-primary {
+  background-color: var(--brand-color) !important;
+  border-radius: 8px;
+}
+
+.nav-link:hover {
+  background-color: var(--brand-hover) !important;
+  color: white !important;
+}
+.bg-brand {
+  background-color: #E5354B !important;
+}
+.btn-outline-primary{
+	color: #E5354B !important;
+}
+
+.dropdown-menu {
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* In AppLayout CSS */
+.main-content {
+  margin-left: 260px;
+  padding: 20px;
+}
+
+.active>.page-link, .page-link.active{
+  background-color: #E5354B !important;
+  border: #e07b52 !important;
+}
+
+.form-control:focus {
+    color: inherit !important;
+    background-color: inherit !important;
+    border-color: inherit !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3), .input-group:not(.has-validation)>.form-floating:not(:last-child)>.form-control, .input-group:not(.has-validation)>.form-floating:not(:last-child)>.form-select, .input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating){
+  border-top-right-radius: 1!important;
+  border-bottom-right-radius: 1!important;
+}
+.box1{
+  border-radius: 5px;
+  background-image: linear-gradient(to right, rgb(192, 18, 226), rgb(235, 100, 254));
+}
+.box2{
+  border-radius: 5px;
+/* background-image: linear-gradient(to right, rgb(44, 120, 229), rgb(96, 175, 245));*/
+}
+.box3{
+   border-radius: 5px;
+/*  background-image: linear-gradient(to right, rgb(225, 149, 14), rgb(243, 205, 41));*/
+}
+.box4{
+   border-radius: 5px;
+  background-image: linear-gradient(to right, rgb(192, 18, 226), rgb(235, 100, 254));
+}
+
+.filterData:focus{
+    background-color: var(--bs-body-bg) !important;
+    color: black !important;
+}
